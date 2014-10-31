@@ -254,8 +254,8 @@ class CamomileClient(object):
     def push_into_a_queue(self, id_queue, data):
         return self.put('queue/'+id_queue+'/next', data)
 
-    def pop_a_queue(self, id_queue, data):
-        return self.get('queue/'+id_queue+'/next', data)
+    def pop_a_queue(self, id_queue):
+        return self.get('queue/'+id_queue+'/next')
 
     def delete_queue(self, id_queue):
         return self.delete('queue/'+id_queue)
