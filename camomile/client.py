@@ -236,7 +236,7 @@ class CamomileClient(object):
         return self.put('annotation/'+id_annotation, data)
 
     def delete_annotation(self, id_annotation):
-        return self.delete('media/'+id_media)
+        return self.delete('media/'+id_annotation)
 
     ### queue ###
     def create_queue(self, data):
