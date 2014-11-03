@@ -260,3 +260,5 @@ class CamomileClient(object):
     def delete_queue(self, id_queue):
         return self.delete('queue/'+id_queue)
 
+    def get_date(self):
+        return self.get('date')
